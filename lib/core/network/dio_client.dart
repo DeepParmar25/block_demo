@@ -15,8 +15,8 @@ class DioClient {
     dio = Dio(
       BaseOptions(
         baseUrl: APIConstants.kAPIBaseURL,
-        connectTimeout: const Duration(seconds: 10),
-        receiveTimeout: const Duration(seconds: 10),
+        connectTimeout: APIConstants.kConnectionTimeOut,
+        receiveTimeout: APIConstants.kReceiveTimeOut,
       ),
     );
     dio.interceptors.add(CommonInterceptor());
