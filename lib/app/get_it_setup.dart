@@ -6,19 +6,12 @@ final getIt = GetIt.instance;
 
 Future<void> setupGetIt() async {
   _registerDataSources();
-  // _registerRepositories();
   _registerCubits();
 }
 
 void _registerDataSources() {
   getIt.registerLazySingleton<UserDataSource>(() => GetUserList());
 }
-
-// void _registerRepositories() {
-//   getIt.registerLazySingleton<UserRepository>(
-//     () => UserRepositoryImpl(getIt()),
-//   );
-// }
 
 void _registerCubits() {
   getIt.registerFactory(() => UserCubit(getIt()));
