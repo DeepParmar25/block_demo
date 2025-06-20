@@ -2,7 +2,7 @@ import 'package:demo_block/features/user_list_Page/application/user_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'config/routes/get_it_setup.dart' as getIt;
+import 'app/get_it_setup.dart' as getIt;
 import 'config/routes/router.dart';
 
 void main() async {
