@@ -7,7 +7,7 @@ import 'config/routes/router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await getIt.init();
+  await getIt.setupGetIt();
   runApp(const MyApp());
 }
 

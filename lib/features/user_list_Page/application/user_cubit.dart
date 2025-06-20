@@ -1,17 +1,17 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../domain/get_users.dart';
+import '../data/get_user_list.dart';
 import 'user_state.dart';
 
 class UserCubit extends Cubit<UserState> {
-  final GetUsers getUsersUseCase;
+  final UserDataSource dataSource;
 
-  UserCubit(this.getUsersUseCase) : super(UserInitial());
+  UserCubit(this.dataSource) : super(UserInitial());
 
   void fetchUsers() async {
     emit(UserLoading());
     try {
-      final users = await getUsersUseCase();
+      final users = await dataSource.getUsers();
       emit(UserLoaded(users));
     } catch (e) {
       emit(UserError(e.toString()));

@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 
+import '../../config/constants/api_constants.dart';
 import 'common_interceptor.dart';
 
 class DioClient {
@@ -13,7 +14,7 @@ class DioClient {
   DioClient._internal() {
     dio = Dio(
       BaseOptions(
-        baseUrl: 'https://dummyjson.com',
+        baseUrl: APIConstants.kAPIBaseURL,
         connectTimeout: const Duration(seconds: 10),
         receiveTimeout: const Duration(seconds: 10),
       ),
