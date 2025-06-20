@@ -1,9 +1,9 @@
-import 'package:demo_block/presentation/user_list_Page/cubit/user_cubit.dart';
-import 'package:demo_block/routes/router.dart';
+import 'package:demo_block/features/user_list_Page/application/user_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'routes/get_it_setup.dart' as getIt;
+import 'config/routes/get_it_setup.dart' as getIt;
+import 'config/routes/router.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

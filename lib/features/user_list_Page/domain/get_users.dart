@@ -1,5 +1,5 @@
-import 'package:demo_block/presentation/user_list_Page/domain/user.dart';
-import 'package:demo_block/presentation/user_list_Page/domain/user_repository.dart';
+import 'package:demo_block/features/user_list_Page/domain/user.dart';
+import 'package:demo_block/features/user_list_Page/domain/user_repository.dart';
 
 class GetUsers {
   final UserRepository repository;

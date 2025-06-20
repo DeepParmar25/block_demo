@@ -1,4 +1,4 @@
-import '../../presentation/user_list_Page/domain/user.dart';
+import '../user.dart';
 
 class UserModel extends User {
   UserModel({

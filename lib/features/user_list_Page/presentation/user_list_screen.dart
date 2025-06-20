@@ -2,8 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../cubit/user_cubit.dart';
-import '../states/user_state.dart';
+import '../application/user_cubit.dart';
+import '../application/user_state.dart';
 
 class UserListScreen extends StatelessWidget {
   Future<void> _refresh(BuildContext context) {

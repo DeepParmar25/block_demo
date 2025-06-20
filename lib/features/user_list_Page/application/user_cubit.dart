@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../domain/get_users.dart';
-import '../states/user_state.dart';
+import 'user_state.dart';
 
 class UserCubit extends Cubit<UserState> {
   final GetUsers getUsersUseCase;
